@@ -1,0 +1,18 @@
+.only-desktop {
+  display: none;
+}
+
+.container {
+  max-width: 84%;
+  margin-inline: auto;
+}
+
+@media (width >=80em) {
+  .only-desktop {
+    display: initial;
+  }
+
+  .container {
+    max-width: min(46%, 60rem);
+  }
+}
