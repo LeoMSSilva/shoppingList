@@ -1,0 +1,37 @@
+main {
+  & footer {
+    & .successDelete {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px;
+      border-radius: 12px;
+      background-color: var(--color-danger);
+      color: var(--always-white);
+
+      & span {
+        background-color: var(--always-white);
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &#information {
+          mask: url(../assets/information.svg) no-repeat center center/contain;
+          -moz-mask: url(../assets/information.svg) no-repeat center center/contain;
+          -webkit-mask: url(../assets/information.svg) no-repeat center center/contain;
+        }
+
+        &#close {
+          mask: url(../assets/close.svg) no-repeat center center/contain;
+          -moz-mask: url(../assets/close.svg) no-repeat center center/contain;
+          -webkit-mask: url(../assets/close.svg) no-repeat center center/contain;
+        }
+      }
+
+      & p {
+        width: 100%;
+        text-align: center;
+        font: var(--label);
+      }
+    }
+  }
+}

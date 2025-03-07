@@ -62,3 +62,9 @@ input {
     padding-block: 1.5rem 8.5rem;
   }
 }
+
+@media (height <41.25em) {
+  body {
+    padding-block: 2rem 0;
+  }
+}
