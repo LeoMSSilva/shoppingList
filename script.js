@@ -1,6 +1,7 @@
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 const ul = document.querySelector('ul');
+const message = document.querySelector('.successDelete');
 
 const createNewItem = () => {  
   const newLi = document.createElement('li');
@@ -28,3 +29,13 @@ button.onclick = (e) => {
     input.value = '';
   }
 };
+
+ul.addEventListener('click', (e) => {
+  if (e.target && e.target.classList.contains('trash')) {
+    e.target.parentNode.remove();
+    message.classList.toggle('visible');
+    setTimeout(() => {
+      message.classList.toggle('visible');
+    }, 300);
+  }
+});

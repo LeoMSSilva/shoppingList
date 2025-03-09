@@ -8,6 +8,12 @@ main {
       border-radius: 12px;
       background-color: var(--color-danger);
       color: var(--always-white);
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      &.visible {
+        opacity: 1;
+      }
 
       & span {
         background-color: var(--always-white);
